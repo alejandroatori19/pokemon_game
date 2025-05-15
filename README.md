@@ -115,3 +115,37 @@
 | + has_usable_pokemon()|
 | + switch_pokemon()    |
 +------------------------+
+
+
+# GENERIC DISTRIBUTION OF THE PROJECT
+poke_battle_project/
+│
+├── main.py
+├── README.md
+├── .gitignore
+│
+├── test_data/
+│   └── trainer_data.json
+│
+├── core/                  # Lógica principal del juego (núcleo)
+│   ├── trainer.py         # Clase Trainer
+│   ├── pokemon.py         # Clase Pokemon
+│   ├── stats.py           # Clase Stats
+│   └── move.py            # Clase Move
+│
+├── battle/                # Todo lo relacionado con combates
+│   ├── battle_controller.py   # BattleController
+│   ├── battle_state.py        # BattleState
+│   ├── pokemon_in_battle.py   # PokemonInBattle
+│   └── mechanics/             # Submódulo para lógica específica
+│       ├── damage_calc.py     # (futura lógica de daño)
+│       ├── status_effects.py  # (futura lógica de estados)
+│       └── move_resolution.py # (resolver turnos, prioridades, etc.)
+│
+├── data/                 # Datos reutilizables o constantes
+│   ├── types.py           # Tipos, ventajas y desventajas
+│   └── moves_data.json    # Datos de movimientos (opcional)
+│
+└── utils/                # Utilidades generales
+    ├── loader.py         # Cargar desde JSON, validación
+    └── logger.py         # Debug/logging personalizado
