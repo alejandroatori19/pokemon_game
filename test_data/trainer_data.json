@@ -1,110 +1,104 @@
 {
   "Trainer": {
-    "Name": "Ash Ketchum",
+    "Name": "Ash",
     "PokemonTeam": [
       {
         "Name": "Pikachu",
-        "Alias": "Sparky",
-        "Id": 1,
-        "PokedexNumber": 25,
-        "Type": ["Electric", null],
-        "Gender": "Male",
-        "Level": 50,
+        "Level": 25,
+        "Type": ["Electric"],
+        "Nature": "Jolly",
         "BaseStats": {
-          "hp": 35,
-          "attack": 55,
-          "defense": 40,
-          "sp_attack": 50,
-          "sp_defense": 50,
-          "speed": 90
+          "HP": 35,
+          "Physical Attack": 55,
+          "Physical Defense": 40,
+          "Special Attack": 50,
+          "Special Defense": 50,
+          "Speed": 90
         },
         "IVs": {
-          "hp": 31,
-          "attack": 31,
-          "defense": 20,
-          "sp_attack": 30,
-          "sp_defense": 28,
-          "speed": 31
+          "HP": 31,
+          "Physical Attack": 31,
+          "Physical Defense": 31,
+          "Special Attack": 31,
+          "Special Defense": 31,
+          "Speed": 31
         },
         "EVs": {
-          "hp": 6,
-          "attack": 0,
-          "defense": 0,
-          "sp_attack": 252,
-          "sp_defense": 0,
-          "speed": 252
+          "HP": 0,
+          "Physical Attack": 252,
+          "Physical Defense": 0,
+          "Special Attack": 0,
+          "Special Defense": 4,
+          "Speed": 252
         },
         "Movements": [
           {
             "Name": "Thunderbolt",
-            "Id": 101,
-            "Category": "Special",
+            "Description": "A strong electric attack that may paralyze the foe.",
             "Type": "Electric",
+            "Category": "Special",
             "Attack": 90,
-            "Priority": 0,
-            "Description": "A strong electric blast crashes down on the target."
+            "Accuracy": 100,
+            "PP": 15
           },
           {
             "Name": "Quick Attack",
-            "Id": 102,
-            "Category": "Physical",
+            "Description": "An extremely fast attack that always strikes first.",
             "Type": "Normal",
+            "Category": "Physical",
             "Attack": 40,
-            "Priority": 1,
-            "Description": "An almost invisibly fast attack that is certain to strike first."
+            "Accuracy": 100,
+            "PP": 30
           }
         ]
       },
       {
         "Name": "Charizard",
-        "Alias": "Blaze",
-        "Id": 2,
-        "PokedexNumber": 6,
+        "Level": 36,
         "Type": ["Fire", "Flying"],
-        "Gender": "Male",
-        "Level": 55,
+        "Nature": "Brave",
         "BaseStats": {
-          "hp": 78,
-          "attack": 84,
-          "defense": 78,
-          "sp_attack": 109,
-          "sp_defense": 85,
-          "speed": 100
+          "HP": 78,
+          "Physical Attack": 84,
+          "Physical Defense": 78,
+          "Special Attack": 109,
+          "Special Defense": 85,
+          "Speed": 100
         },
         "IVs": {
-          "hp": 28,
-          "attack": 30,
-          "defense": 29,
-          "sp_attack": 31,
-          "sp_defense": 31,
-          "speed": 27
+          "HP": 30,
+          "Physical Attack": 30,
+          "Physical Defense": 30,
+          "Special Attack": 30,
+          "Special Defense": 30,
+          "Speed": 30
         },
         "EVs": {
-          "hp": 6,
-          "attack": 0,
-          "defense": 0,
-          "sp_attack": 252,
-          "sp_defense": 0,
-          "speed": 252
+          "HP": 0,
+          "Physical Attack": 100,
+          "Physical Defense": 0,
+          "Special Attack": 252,
+          "Special Defense": 0,
+          "Speed": 156
         },
         "Movements": [
           {
             "Name": "Flamethrower",
-            "Id": 201,
-            "Category": "Special",
+            "Description": "A powerful fire attack that may inflict a burn.",
             "Type": "Fire",
+            "Category": "Special",
             "Attack": 90,
-            "Priority": 0,
-            "Description": "The target is scorched with an intense blast of fire."
+            "Accuracy": 100,
+            "PP": 15
           },
           {
-            "Name": "Fly",
-            "Id": 202,
-            "Category": "Physical",
+            "Name": "Air Slash",
+            "Description": "The user attacks with a blade of air that may cause flinching.",
             "Type": "Flying",
-            "Attack": 90,
-            "Priority": 0,
-            "Description": "The user soars and then strikes its target on the next turn."
+            "Category": "Special",
+            "Attack": 75,
+            "Accuracy": 95,
+            "PP": 15
           }
         ]
       }

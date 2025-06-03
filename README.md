@@ -140,7 +140,8 @@ poke_battle_project/
 │   └── mechanics/             # Submódulo para lógica específica
 │       ├── damage_calc.py     # (futura lógica de daño)
 │       ├── status_effects.py  # (futura lógica de estados)
-│       └── move_resolution.py # (resolver turnos, prioridades, etc.)
+│       └── move_resolution.py # (resolver turnos, pr
+ioridades, etc.)
 │
 ├── data/                 # Datos reutilizables o constantes
 │   ├── types.py           # Tipos, ventajas y desventajas
